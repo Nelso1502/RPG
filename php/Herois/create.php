@@ -6,7 +6,7 @@
 header('Content-Type: application/json');
 
 //arquivo para testar o metodo create()
-	include_once '../../config/conexao.php';
+	include_once '../../config/Conexao.php';
 	include_once '../../model/herois.php';
 	//instanciando e retornando conexao
 	$db = new Conexao();
@@ -22,7 +22,8 @@ header('Content-Type: application/json');
     $her->classe = $_POST['classe'];
     $her->vida = $_POST['vida'];
     $her->povo = $_POST['povo'];
-    $her->reino = $_POST['reino'];
+	$her->reino = $_POST['reino'];
+	$her->img = $_POST['img'];
 
 	//executando o método create
 
