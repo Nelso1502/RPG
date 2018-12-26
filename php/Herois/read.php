@@ -4,7 +4,7 @@
 
 	header('Content-Type: application/json');
 //arquivo para testar o metodo read()
-	include_once '../../config/conexao.php';
+	include_once '../../config/Conexao.php';
 	include_once '../../model/herois.php';
 
 	$db = new Conexao();
@@ -23,3 +23,4 @@
 
 	
 	echo json_encode($resultado);
+
